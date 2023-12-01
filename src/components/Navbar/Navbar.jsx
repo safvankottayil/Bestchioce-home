@@ -4,9 +4,9 @@ function Navbar() {
   return (
     <div className="w-full md:h-40 relative">
       <div>
-    <div className="flex Nalist-font-family w-screen fixed md:h-40  md:px-24 bg-section-1  md:pb-5 justify-between">
+    <div className="flex Nalist-font-family w-screen fixed md:h-40 md:px-14  lg:px-24 bg-section-1  items-center justify-between">
       <div className="md:hidden flex items-center pl-5">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 25" fill="none">
   <path d="M3 7.94958H21" stroke="url(#paint0_linear_599_822)" stroke-width="1.5" stroke-linecap="round"/>
   <path d="M3 12.9496H21" stroke="url(#paint1_linear_599_822)" stroke-width="1.5" stroke-linecap="round"/>
   <path d="M3 17.9496H21" stroke="url(#paint2_linear_599_822)" stroke-width="1.5" stroke-linecap="round"/>
@@ -33,16 +33,16 @@ function Navbar() {
         <img className=" w-40 md:w-96 py-3 md:py-0 pl-2 md:pl-0  left-0" src="/logo-3 1.png" alt="" />
       </div>
       <div className="flex text-xl justify-between items-center ">
-        <div className=" md:pr-10 flex">
+        <div className=" lg:pr-10 flex">
           
-          <button  className="py-3 hidden md:block  navabr-gold-btn-border h-fit px-6 text-gold  rounded-lg">
+          <button  className="py-3 hidden whitespace-nowrap md:block  navabr-gold-btn-border h-fit px-6 text-gold  rounded-lg">
             Sign in
           </button>
-          <button className=" py-2 md:py-3 whitespace-nowrap font-medium text-black text-sm navbar-gold-btn h-fit px-3 md:px-6 bg-custom-gradient rounded-lg border-2 mr-4 md:ml-4">
+          <button className=" py-2 md:py-3 whitespace-nowrap font-medium text-black text-lg md:text-xl navbar-gold-btn h-fit px-3 md:px-6 bg-custom-gradient rounded-lg border-2 lg:mr-4 md:ml-4">
             Service Request
           </button>
         </div>
-        <div className="md:flex text-gold hidden  relative flex-col pl-10 ">
+        <div className="xl:flex text-gold hidden  relative flex-col pl-10 ">
           <p className="uppercase text-end absolute text-gold -top-3 right-0">
             Toll free number
           </p>

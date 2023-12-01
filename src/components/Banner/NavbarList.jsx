@@ -10,7 +10,7 @@ const items = [
 ];
 function NavbarList() {
   return (
-    <div className="hidden md:flex justify-end w-full pr-5 pt-4  z-30 ">
+    <div className="hidden md:flex justify-end w-full pr-5 pt-4  ">
       <div className="py-2 px-4 flex space-x-6 Navlist-bg rounded-2xl ">
       {items.map((value) => {
         return <p  className="text-gold py-2 px-4 text-xl font-semibold Nalist-font-family" >{value.item}</p>;

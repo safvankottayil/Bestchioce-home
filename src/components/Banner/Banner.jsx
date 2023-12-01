@@ -4,11 +4,11 @@ import NavbarList from "./NavbarList";
 function Banner() {
   return (
     <>
-      <div className=" md:px-20 flex md:pb-12 bg-section-1 h-screen md:h-fit w-full">
+      <div className="md:px-14 lg:px-20 flex md:pb-12 bg-section-1 h-screen md:h-fit w-full">
         <div className="banner-image flex flex-col justify-between rounded-lg w-full h-full md:h-[600px]">
           <NavbarList />
           <div></div>
-          <div className="h-60 w-full md:hidden flex justify-center items-center  bg-gradient-to-b from-transparent via-black to-black">
+          <div className="h-96 w-full md:hidden flex justify-center items-center  bg-gradient-to-b from-transparent via-black to-black">
             <div className="flex mt-10 py-3 px-5  service-card text-black md:hidden items-center  flex-col  ">
               <p className="uppercase font-medium ">
                 Toll free number

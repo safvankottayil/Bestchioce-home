@@ -79,11 +79,11 @@ function Services() {
         </div>
       </div>
       {/* show sevices */}
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-7 pt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4  gap-7 pt-8">
         {ServiceData.map((item) => {
-          return <div className="h-52  flex  flex-col service-card px-5 py-6">
+          return <div className="min-h-52  flex  flex-col service-card px-5 py-6">
             <div><h1 className="text-gray-950 text-2xl font-bold">{item.title}</h1></div>
-            <div className="h-24"><p  className="text-gray-900 overflow-hidden  font-normal text-base leading-5 pt-2 ">{item.decription}</p></div>
+            <div className="h-24"><p  className="text-gray-900 overflow-hidden  font-normal text-base  leading-5 pt-2 ">{item.decription}</p></div>
             <div>
                 <button className="px-5 py-2 rounded-md text-xl font-semibold  bg-black">
                   <span className="text-gold">Read more</span></button>

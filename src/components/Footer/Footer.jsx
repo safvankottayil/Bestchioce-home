@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className=" flex flex-col md:flex-row items-center justify-between bg-section-1 md:pt-20 md:px-16 pb-14">
       <div className="flex flex-col">
-        <img src="/logo-3 1.png" className="w-72" alt="" />
+        <img src="/logo-3 1.png" className="w-72 md:w-96" alt="" />
         <div className="flex justify-around items-center pt-5">
           <span className="hidden md:block ">Socials:</span>
           {/* facebook */}
@@ -145,12 +145,12 @@ function Footer() {
         </div>
       </div>
       {/* colum 2 */}
-      <div className="flex flex-row-reverse  pt-20 md:pt-0 justify-between md:justify-center w-full px-5">
-      <div className="flex   flex-col pt-5">
+      <div className="flex  flex-row-reverse  pt-20 md:pt-0 justify-between md:justify-center w-full px-7">
+      <div className="flex   flex-col text-sm md:text-base pt-5">
         <h1 className="text-gold text-lg font-bold pb-2">How to reach us</h1>
         <div className="flex md:py-2">
           <svg
-            className="mr-4"
+            className="mr-2 md:mr-4"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -170,7 +170,7 @@ function Footer() {
         </div>
         <div className="flex py-1 md:py-2">
           <svg
-            className="mr-4"
+            className="mr-2 md:mr-4"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -190,7 +190,7 @@ function Footer() {
         </div>
         <div className="flex py-1 md:py-2">
           <svg
-            className="mr-4"
+            className="mr-2 md:mr-4"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -206,9 +206,9 @@ function Footer() {
         </div>
       </div>
       {/* mobile------------------ */}
-      <div className="flex md:hidden  flex-col pt-5">
+      <div className="flex md:hidden text-sm flex-col pt-5">
         <h1 className="text-gold text-lg font-bold pb-2">Quick Links</h1>
-        <div className="flex  py-1 md:py-2">
+        <div className="flex   py-1 md:py-2">
          <p>Consultation</p>
         </div>
         <div className="flex  py-1 md:py-2">
@@ -223,7 +223,7 @@ function Footer() {
       </div>
       {/* colum 3 */}
       <div className="md:flex pt-10 hidden">
-      <button className="py-3 whitespace-nowrap text-black navbar-gold-btn h-fit px-6 bg-custom-gradient rounded-lg border-2  ml-4">
+      <button className="py-3 whitespace-nowrap text-black font-semibold navbar-gold-btn h-fit px-6 bg-custom-gradient rounded-lg border-2  ml-4">
             Service Request
           </button>
       </div>

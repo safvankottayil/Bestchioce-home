@@ -2,11 +2,11 @@ import React from "react";
 
 function About() {
   return (
-    <div className="bg-about-image Nalist-font-family text-gray-300 flex flex-col md:flex-row  w-full h-fit px-2 md:px-16 py-14">
-      <img src="/Rectangle 173.png" className=" w-full md:w-96 " alt="" />
+    <div className="bg-about-image Nalist-font-family text-gray-300 flex flex-col lg:flex-row  w-full h-fit px-2  md:px-16 py-14">
+      <img src="/Rectangle 173.png" className=" w-full lg:w-96 " alt="" />
       <div className="flex flex-col">
         <h1 className="text-4xl p-5 font-bold">About us</h1>
-        <p className="px-5 leading-5 ">
+        <p className="px-5 sm:text-base leading-5 ">
           Best Choice is a document clearance company that provides professional
           and affordable services for individuals and businesses. We have been
           in the industry for over 10 years, and we have the expertise and
@@ -21,7 +21,7 @@ function About() {
           document clearance easy and hassle-free for you. Contact us today and
           let us take care of your document clearance needs.
         </p>
-        <button className="text-black navbar-gold-btn w-32 m-5 font-medium text-xl py-3 " >Read more</button>
+        <button className="text-black navbar-gold-btn w-32 m-5 font-medium text-xl py-2 md:py-3 " >Read more</button>
       </div>
     </div>
   );
