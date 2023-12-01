@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useLayoutEffect, useRef, useState } from "react";
 const length = [1, 2];
 import { ServiceData } from "./serviceData";
 function Services() {
+  const [show, doShow] = useState(false);
+  const ourRef = useRef(null);
+  useLayoutEffect(() => {
+    function scrolll() {
+      const one = ourRef.current.getBoundingClientRect().top;
+      if (0 > (one - window.scrollY)) {
+        // alert(1)
+        doShow(true);
+      }
+    }
+    window.addEventListener("scroll", scrolll);
+  }, []);
   return (
     <>
     <div className=" p-4 md:p-16 Nalist-font-family flex flex-col bg-section-1">
       <div className="h-14 flex items-center justify-center">
-        <div className="flex-col  flex justify-center ">
+        <div className={`flex-col ${show?' translate-y-0 z-0 transition-all duration-1000':"translate-y-20 text-transparent"} flex justify-center `}>
           {length.map(() => {
             return (
               <svg
@@ -40,10 +52,10 @@ function Services() {
             );
           })}
         </div>
-        <div className="text-gold  font-extrabold text-4xl px-5 md:px-14 items-center">
+        <div  className={`text-gold ${show?' translate-y-0 z-0 transition-all duration-1000':"translate-y-20 text-transparent"} font-extrabold text-4xl px-5 md:px-14 items-center`}>
           Services
         </div>
-        <div className="flex-col flex justify-center ">
+        <div className={`flex-col ${show?' translate-y-0 z-0 transition-all duration-1000':"translate-y-20 text-transparent"} flex justify-center `}>
           {length.map(() => {
             return (
               <svg
@@ -79,9 +91,9 @@ function Services() {
         </div>
       </div>
       {/* show sevices */}
-      <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4  gap-7 pt-8">
+      <div ref={ourRef} className={`grid grid-cols-1 ${show?' translate-y-0 z-0 transition-all duration-1000':"translate-y-20 text-transparent"} sm:grid-cols-2  lg:grid-cols-4  gap-7 pt-8`}>
         {ServiceData.map((item) => {
-          return <div className="min-h-52  flex  flex-col service-card px-5 py-6">
+          return <div  className="min-h-52  flex  flex-col service-card px-5 py-6">
             <div><h1 className="text-gray-950 text-2xl font-bold">{item.title}</h1></div>
             <div className="h-24"><p  className="text-gray-900 overflow-hidden  font-normal text-base  leading-5 pt-2 ">{item.decription}</p></div>
             <div>
