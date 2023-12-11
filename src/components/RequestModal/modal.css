@@ -1,0 +1,38 @@
+.radio-btn-border{
+    
+     border: 2px solid var(--Gold-2, #E2B748);
+  }
+
+  input[type='radio']:checked{
+    accent-color: #E2B748;
+     appearance: none;
+}
+input[type='radio']{
+     appearance: none;
+     background-color:gainsboro;
+}
+
+.input-bg-border{
+    border-radius: var(--spacing-system-radius-sm, 8px);
+    background: var(--color-grey-g-700, #353535);
+}
+.submit-btn{
+    border-radius: var(--spacing-system-radius-md, 12px);
+   background: var(--Gold-1, linear-gradient(109deg, #AE8625 -47.85%, #F7EF8A 13.59%, #D2AC47 72.15%, #EDC967 136.47%));
+}
+.cancel-btn{
+    border-radius: var(--spacing-system-radius-md, 12px);
+border: 2px solid var(--Gold-2, #E2B748);
+}
+
+.modal-bg{
+    border-radius: var(--spacing-0, 0px);
+background: var(--color-grey-g-900, #1C1C1C);
+}
+.label-font{
+    color: var(--color-grey-g-30, #EDEDED);
+font-size: 14px;
+font-style: normal;
+font-weight: 375;
+line-height: 120%; /* 16.8px */
+}
